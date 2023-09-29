@@ -81,7 +81,7 @@ button:hover, button:focus-visible, button:active{
 }
 .result,
 .summary{
-    padding: 1rem 2.5rem 1rem;
+    padding: 1.5rem 2.5rem 1rem;
 }
 .result{
     color: var(--clr-fnt-darker);
