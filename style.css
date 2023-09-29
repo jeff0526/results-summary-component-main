@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+:root{
+    --clr-react: hsl(0, 100%, 67%);
+    --clr-memo:hsl(39, 100%, 56%);
+    --clr-Verbal: hsl(166, 100%, 37%);
+    --clr-visual: hsl(234, 85%, 45%);
+
+    --clr-trans-react: hsl(0, 100%, 67%, 0.1);
+    --clr-trans-memo:hsl(39, 100%, 56%, 0.1);
+    --clr-trans-Verbal: hsl(166, 100%, 37%, 0.1);
+    --clr-trans-visual: hsl(234, 85%, 45%, 0.1);
+    /* gradients */
+    --clr-bg-gradients: linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    --clr-circle-gradients:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+
+    /* fonts color */
+    --clr-bg-container:hsl(0, 0%, 100%);
+    --clr-fnt: hsl(221, 100%, 96%);
+    --clr-fnt-darker:hsl(241, 100%, 89%);
+    --clr-btn-ntactive:hsl(224, 30%, 27%);
+
+}
+
+
+*{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+i{
+    display: block;
+    max-width: 100%;
+}
+body{
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (min-width: 600px){
+    body{
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+    
+}
+.result_title,
+.summary_title{
+    font-weight: 700;
+    font-size: 1.5rem;
+
+}
+
+button{
+    font-size: 1rem;
+    color: var(--clr-fnt);
+    background-color: var(--clr-btn-ntactive);
+    padding: 1rem 2rem;
+    border-radius: 100vw;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    width: 100%;
+    margin: 2rem 0 0 0;
+}
+
+button:hover, button:focus-visible, button:active{
+    background-image: var(--clr-bg-gradients);
+}
+.summary_result{
+    max-width: 46rem;
+    display: grid;  
+}
+
+@media (min-width: 600px){
+    .summary_result{
+        grid-template-columns: 1fr 1fr;
+        box-shadow: 0 4px 8px 0  rgb(0, 0, 0,0.1),0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        border-radius:  2rem;
+        overflow: hidden;
+    }
+}
+.result,
+.summary{
+    padding: 1rem 2.5rem 1rem;
+}
+.result{
+    color: var(--clr-fnt-darker);
+    background-image: var(--clr-bg-gradients);
+    border-radius: 0 0 2rem 2rem;
+    text-align: center;
+   
+ 
+}
+@media (min-width: 600px){
+    .result{
+    border-radius: 2rem;
+    }
+}
+
+.result_score{
+    width: 12rem;
+    margin-inline: auto;
+    background-image: var(--clr-circle-gradients);
+    color:var(--clr-fnt-darker);
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    place-content: center;
+    margin-top: 2rem;
+}
+.result_score span{
+    color: var(--clr-bg-container);
+    display: block;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+   
+.result_great{
+    font-size: 2rem;
+    color: var(--clr-fnt);
+    margin-top: 2rem;
+}
+.result p{
+    color: var(--clr-fnt-darker);
+    font-size: 18px;
+    padding: 0 1rem;
+}
+.sum_item{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 0 1rem 0 1rem ;
+    border-radius: .5rem;
+    background-color: var(--clr-fnt);
+}
+.item_group{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+.grid-item{
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+}
+.summary_title{
+    margin-bottom: 2rem;
+}
+.material-symbols-outlined{
+    margin-top: .5rem;
+}
+.item_group h3{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.react{
+    color: var(--clr-react);
+}
+.memo{
+    color:var(--clr-memo);
+}
+.verb{
+    color: var(--clr-Verbal);
+}
+.vis{
+    color: var(--clr-visual);
+}
+.sum_item_title1{
+    color: var(--clr-react);
+}
+.sum_item_title2{
+    color: var(--clr-memo);
+}
+.sum_item_title3{
+    color:  var(--clr-Verbal);
+}
+.sum_item_title4{
+    color:  var(--clr-visual);
+}
+.bg-react{
+      background-color:var(--clr-trans-react);
+}
+.bg-memo{
+    background-color:var(--clr-trans-memo);
+}
+.bg-verbal{
+    background-color: var(--clr-trans-Verbal);
+}
+.bg-visual{
+    background-color: var(--clr-trans-visual);
+}
+.sum_score {
+color:hsl(224, 30%, 27%,0.5);
+font-weight: 700;
+}
+.sum_score span{
+    color:var(--clr-btn-ntactive);
+    font-weight: 700;
+}
