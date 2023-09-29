@@ -54,7 +54,7 @@ button{
     font-size: 1rem;
     color: var(--clr-fnt);
     background-color: var(--clr-btn-ntactive);
-    padding: 1rem 2rem;
+    padding: 1.2rem 2rem;
     border-radius: 100vw;
     border: none;
     cursor: pointer;
@@ -88,7 +88,7 @@ button:hover, button:focus-visible, button:active{
     background-image: var(--clr-bg-gradients);
     border-radius: 0 0 2rem 2rem;
     text-align: center;
-   
+    font-size: 18px;
  
 }
 @media (min-width: 600px){
@@ -118,12 +118,10 @@ button:hover, button:focus-visible, button:active{
    
 .result_great{
     font-size: 2rem;
-    color: var(--clr-fnt);
-    margin-top: 2rem;
+    color: var(--clr-bg-container);
+    margin-top: 1.5rem;
 }
-.result p{
-    color: var(--clr-fnt-darker);
-    font-size: 18px;
+.score_notes{
     padding: 0 1rem;
 }
 .sum_item{
