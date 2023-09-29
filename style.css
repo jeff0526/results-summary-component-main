@@ -152,7 +152,7 @@ button:hover, button:focus-visible, button:active{
 .material-symbols-outlined{
     margin-top: .5rem;
 }
-.item_group h4{
+.item_group h3{
     font-weight: 700;
     font-size: 1rem;
 }
